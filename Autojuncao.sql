@@ -1,0 +1,13 @@
+
+/* Lista dos diferente produtos e o grupo que pertence
+
+AUTOJUNÇÃO DENTRO DE UMA TABELA */
+
+
+
+SELECT
+	DISTINCT PR.PRODUTO,
+	GR.GRUPOPROD
+FROM VENDAS AS GR
+INNER JOIN VENDAS PR
+	ON GR.COD_PRODUTO = PR.GRPROD;
