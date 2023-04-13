@@ -1,9 +1,9 @@
 /*view para pegar as informçãoes: 
   -ULTIMO PREÇO DE COMPRA DE UM PRODUTO
   -ULTIMA DATA DE COMPRA
-  - VALOR DE IMPOSTO
+  - VALOR DE IMPOSTO */
   
-  /*View para pegar os diferentes (unico) produtos dentro ta tabela de entrada SD1010 e data de emissao
+  /*View para pegar os diferentes (unico) produtos dentro ta tabela de entrada SD1010 e data de emissao*/
   
   CREATE VIEW VW_TEZTE 
   AS 
@@ -13,7 +13,7 @@ FROM SD1010
 	GROUP BY D1_COD;
   
   
-  /*VIEW para pegar os proutos dentro da SD1 inner join com a a view TEZTE on CODIGO do produto e confrontar com as data de emissão 
+  /*VIEW para pegar os proutos dentro da SD1 inner join com a a view TEZTE on CODIGO do produto e confrontar com as data de emissão */
 
 CREATE VIEW Vw_compras_estoque
 AS
