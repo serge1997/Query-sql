@@ -1,5 +1,5 @@
 /*Recuperar pedidos de clientes:
-/*Recuperar pedidos de clientes com endereços:
+Recuperar pedidos de clientes com endereços: */
 
 SELECT    
   C.CompanyName,     
