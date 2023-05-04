@@ -15,3 +15,12 @@
 SELECT * FROM SA1010 AS S WHERE NOT EXISTS(
 	SELECT * FROM VENDAS AS V WHERE V.COD_CLIENTE = S.A1_COD
 )
+
+-- somente where os valores da coluna Size são numericos. 
+-- ISNUMERIC(Size) = 1 => 1 represesente True
+-- ISNUMERIC(Size) = 0 => retorna os valores dentro da coluna size não são numericos. O 0 => false
+SELECT Name, Size AS NumericSizeFROM SalesLT.Product WHERE ISNUMERIC(Size) = 1;
+
+-- Exemplo com o IIF
+
+SELECT Name, IIF(ISNUMERIC(Size) = 1, 'Numeric', 'Non-Numeric') AS SizeTypeFROM SalesLT.Product;
