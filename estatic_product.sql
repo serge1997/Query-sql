@@ -1,4 +1,4 @@
--- Ultimo dia de compra de cada produto, e a diferencia de numero até agora.
+-- Ultimo dia de compra de cada produto, e a diferencia em numero de mês até agora.
 
 SELECT
 	DISTINCT COD_PRODUTO,
