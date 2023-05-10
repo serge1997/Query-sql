@@ -19,3 +19,17 @@ DECLARE
 	BEGIN
 		PRINT 'Nada foi vendido o dia de Hoje'
 	END
+
+
+
+-- while
+
+DECLARE @customerID AS INT = 1;D
+ECLARE @fname AS NVARCHAR(20);
+DECLARE @lname AS NVARCHAR(30);
+	WHILE @customerID <=10BEGIN    
+		SELECT @fname = FirstName, @lname = LastName FROM SalesLT.Customer        
+			WHERE CustomerID = @CustomerID;    
+		PRINT @fname + N' ' + @lname;    
+		SET @customerID += 1;
+	END;
