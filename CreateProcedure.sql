@@ -1,0 +1,6 @@
+CREATE PROCEDURE ProdVendas AS
+	DECLARE @data AS DATE
+	SET @data = GETDATE()
+SELECT * FROM VENDAS WHERE CAST(EMISSAO AS DATE) = @data;
+
+EXECUTE sp_executesql ProdVendas;
