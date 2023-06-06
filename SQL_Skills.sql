@@ -23,4 +23,4 @@ SELECT Name, Size AS NumericSize FROM SalesLT.Product WHERE ISNUMERIC(Size) = 1;
 
 -- Exemplo com o IIF
 
-SELECT Name, IIF(ISNUMERIC(Size) = 1, 'Numeric', 'Non-Numeric') AS SizeTypeFROM SalesLT.Product;
+SELECT Name, IIF(ISNUMERIC(Size) = 1, 'Numeric', 'Non-Numeric') AS SizeType FROM SalesLT.Product;
