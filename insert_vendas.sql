@@ -1,0 +1,470 @@
+USE [CZ2O05_152804_PR_PD]
+GO
+
+INSERT INTO [dbo].[VENDAS]
+           ([EMISSAO]
+           ,[COD_FIL]
+           ,[DESC_FIL]
+           ,[NF]
+           ,[TIPONF]
+           ,[GRPROD]
+           ,[GRUPOPROD]
+           ,[COD_PRODUTO]
+           ,[PRODUTO]
+           ,[QUANTI]
+           ,[CFOP]
+           ,[TIPO]
+           ,[REGIAO]
+           ,[COD_MUN]
+           ,[MUNIC]
+           ,[ESTADO]
+           ,[COD_CLIENTE]
+           ,[LOJA]
+           ,[HISTORICO]
+           ,[COD_VEND]
+           ,[VENDEDOR]
+           ,[COD_OPERADOR]
+           ,[OPERADOR]
+           ,[VEND_UA1]
+           ,[NUAVEND1]
+           ,[VEND_UA2]
+           ,[NUAVEND2]
+           ,[TMK]
+           ,[VENDA]
+           ,[FRETE]
+           ,[DEVOLUCAO]
+           ,[PIPI]
+           ,[IPI]
+           ,[ST]
+           ,[RECEITA_BRUTA]
+           ,[PICMS]
+           ,[ICMS]
+           ,[PIS]
+           ,[COFINS]
+           ,[DESCONTO]
+           ,[RECEITA_LIQUIDA]
+           ,[CUSTO]
+           ,[MARGEM_BRUTA]
+           ,[P_CUSTO]
+           ,[P_LUCRO]
+           ,[NCM]
+           ,[TIPOCLI]
+           ,[IE]
+           ,[SUFRAMA]
+           ,[GRPTRIB]
+           ,[TPESSOA]
+           ,[CNAE]
+           ,[SIMPLES]
+           ,[MT]
+           ,[NUMCTE]
+           ,[SERCTE]
+           ,[NQCTE]
+           ,[VALFRETE]
+           ,[PEDIDO]
+           ,[ITEM]
+           ,[PRCVEN]
+           ,[FORNECEDOR]
+           ,[NOTAORIGEM]
+           ,[DUPLIC]
+           ,[GERENTEUA1]
+           ,[NOMEGERENTEUA1]
+           ,[NOME_GERENTEUA1]
+           ,[DIAS_MES]
+           ,[DIAS_PASSADOS]
+           ,[META_UA1]
+           ,[META_UA2]
+           ,[B1_PROC]
+           ,[GERENTE_UA2]
+           ,[NOME_VEND2]
+           ,[REGIAO_VEND])
+     VALUES
+           ('20230609',
+            '020201',
+           'GIBRALTAR - CURITIBA',
+           '000353814',
+           'N',
+           '0801',
+           'REVENDA - DIVERSOS',
+           'FREECO27A',
+           'FREECO BLOQUEADOR DE ODORES SANITARIOS CX6 RF 500 ML',
+            4,
+           '5102',
+            'ME',
+           'CURITIBA',
+            '07652',
+            'FAZENDA RIO GRANDE, RS, PR',
+			'PR',
+           '040679',
+           '01',
+           'NTN ROLAMENTOS DO BRASIL LTDA',
+            '037',
+           'KEVIN.COLACO',
+           '000195',
+           'FABIANA COSTA FERNANDES',
+           '037',
+          'KEVIN.COLACO',
+           '096',
+           'FABIANA.FERNANDES',
+           'E-MAIL',
+           949.2,
+          0,
+           0,
+           0,
+           0,
+           0,
+           949.2,
+           19,
+           180.35,
+           0,
+           0,
+		   0,
+           768.85,
+           567,
+           201.85,
+           59.73,
+           21.26,
+           '96039000',
+           'F',
+           '9018105591',
+           '',
+          'CON',
+           '',
+          '',
+           '2',
+           '2',
+           '',
+          '',
+           0,
+           0,
+           '334335',
+          '08',
+           237.3,
+           'KIMBERLY CLARK BRASIL IND COM P HIG LTDA',
+           '',
+           'S',
+           '900000',
+           'GERENTE CURITIBA _Adilson',
+           '900000-GERENTE CURITIBA _Adilson',
+           22,
+           6,
+           202000,
+			690000,
+           '000014',
+           '900006 - GERENTE TELEVENDAS_Patricia',
+           '096   -FABIANA.FERNANDES',
+         '')
+GO
+
+USE [CZ2O05_152804_PR_PD]
+GO
+
+INSERT INTO [dbo].[VENDAS]
+           ([EMISSAO]
+           ,[COD_FIL]
+           ,[DESC_FIL]
+           ,[NF]
+           ,[TIPONF]
+           ,[GRPROD]
+           ,[GRUPOPROD]
+           ,[COD_PRODUTO]
+           ,[PRODUTO]
+           ,[QUANTI]
+           ,[CFOP]
+           ,[TIPO]
+           ,[REGIAO]
+           ,[COD_MUN]
+           ,[MUNIC]
+           ,[ESTADO]
+           ,[COD_CLIENTE]
+           ,[LOJA]
+           ,[HISTORICO]
+           ,[COD_VEND]
+           ,[VENDEDOR]
+           ,[COD_OPERADOR]
+           ,[OPERADOR]
+           ,[VEND_UA1]
+           ,[NUAVEND1]
+           ,[VEND_UA2]
+           ,[NUAVEND2]
+           ,[TMK]
+           ,[VENDA]
+           ,[FRETE]
+           ,[DEVOLUCAO]
+           ,[PIPI]
+           ,[IPI]
+           ,[ST]
+           ,[RECEITA_BRUTA]
+           ,[PICMS]
+           ,[ICMS]
+           ,[PIS]
+           ,[COFINS]
+           ,[DESCONTO]
+           ,[RECEITA_LIQUIDA]
+           ,[CUSTO]
+           ,[MARGEM_BRUTA]
+           ,[P_CUSTO]
+           ,[P_LUCRO]
+           ,[NCM]
+           ,[TIPOCLI]
+           ,[IE]
+           ,[SUFRAMA]
+           ,[GRPTRIB]
+           ,[TPESSOA]
+           ,[CNAE]
+           ,[SIMPLES]
+           ,[MT]
+           ,[NUMCTE]
+           ,[SERCTE]
+           ,[NQCTE]
+           ,[VALFRETE]
+           ,[PEDIDO]
+           ,[ITEM]
+           ,[PRCVEN]
+           ,[FORNECEDOR]
+           ,[NOTAORIGEM]
+           ,[DUPLIC]
+           ,[GERENTEUA1]
+           ,[NOMEGERENTEUA1]
+           ,[NOME_GERENTEUA1]
+           ,[DIAS_MES]
+           ,[DIAS_PASSADOS]
+           ,[META_UA1]
+           ,[META_UA2]
+           ,[B1_PROC]
+           ,[GERENTE_UA2]
+           ,[NOME_VEND2]
+           ,[REGIAO_VEND])
+     VALUES
+           ('20230609',
+            '020201',
+           'GIBRALTAR - CURITIBA',
+           '000353814',
+           'N',
+           '0101',
+           '3M - DISCOS',
+           'H0001779646',
+           'DISCO LIMPADOR LP 510MM',
+            8,
+           '5102',
+            'ME',
+           'CURITIBA',
+            '07652',
+            'FAZENDA RIO GRANDE, RS, PR',
+			'PR',
+           '040679',
+           '01',
+           'NTN ROLAMENTOS DO BRASIL LTDA',
+            '037',
+           'KEVIN.COLACO',
+           '000195',
+           'FABIANA COSTA FERNANDES',
+           '037',
+          'KEVIN.COLACO',
+           '096',
+           'FABIANA.FERNANDES',
+           'E-MAIL',
+           456,
+          0,
+           0,
+           0,
+           0,
+           0,
+           456,
+           0,
+           0,
+           7.53,
+           34.66,
+		   0,
+           413.81,
+           199.77,
+           214.04,
+           43.80,
+           46.93,
+           '68053090',
+           'F',
+           '9018105591',
+           '',
+          'CON',
+           '',
+          '',
+           '2',
+           '2',
+           '',
+          '',
+           0,
+           0,
+           '334335',
+          '10',
+           57,
+           'KIMBERLY CLARK BRASIL IND COM P HIG LTDA',
+           '',
+           'S',
+           '900000',
+           'GERENTE CURITIBA _Adilson',
+           '900000-GERENTE CURITIBA _Adilson',
+           22,
+           6,
+           202000,
+			690000,
+           '000014',
+           '900006 - GERENTE TELEVENDAS_Patricia',
+           '096   -FABIANA.FERNANDES',
+         '')
+GO
+
+INSERT INTO [dbo].[VENDAS]
+           ([EMISSAO]
+           ,[COD_FIL]
+           ,[DESC_FIL]
+           ,[NF]
+           ,[TIPONF]
+           ,[GRPROD]
+           ,[GRUPOPROD]
+           ,[COD_PRODUTO]
+           ,[PRODUTO]
+           ,[QUANTI]
+           ,[CFOP]
+           ,[TIPO]
+           ,[REGIAO]
+           ,[COD_MUN]
+           ,[MUNIC]
+           ,[ESTADO]
+           ,[COD_CLIENTE]
+           ,[LOJA]
+           ,[HISTORICO]
+           ,[COD_VEND]
+           ,[VENDEDOR]
+           ,[COD_OPERADOR]
+           ,[OPERADOR]
+           ,[VEND_UA1]
+           ,[NUAVEND1]
+           ,[VEND_UA2]
+           ,[NUAVEND2]
+           ,[TMK]
+           ,[VENDA]
+           ,[FRETE]
+           ,[DEVOLUCAO]
+           ,[PIPI]
+           ,[IPI]
+           ,[ST]
+           ,[RECEITA_BRUTA]
+           ,[PICMS]
+           ,[ICMS]
+           ,[PIS]
+           ,[COFINS]
+           ,[DESCONTO]
+           ,[RECEITA_LIQUIDA]
+           ,[CUSTO]
+           ,[MARGEM_BRUTA]
+           ,[P_CUSTO]
+           ,[P_LUCRO]
+           ,[NCM]
+           ,[TIPOCLI]
+           ,[IE]
+           ,[SUFRAMA]
+           ,[GRPTRIB]
+           ,[TPESSOA]
+           ,[CNAE]
+           ,[SIMPLES]
+           ,[MT]
+           ,[NUMCTE]
+           ,[SERCTE]
+           ,[NQCTE]
+           ,[VALFRETE]
+           ,[PEDIDO]
+           ,[ITEM]
+           ,[PRCVEN]
+           ,[FORNECEDOR]
+           ,[NOTAORIGEM]
+           ,[DUPLIC]
+           ,[GERENTEUA1]
+           ,[NOMEGERENTEUA1]
+           ,[NOME_GERENTEUA1]
+           ,[DIAS_MES]
+           ,[DIAS_PASSADOS]
+           ,[META_UA1]
+           ,[META_UA2]
+           ,[B1_PROC]
+           ,[GERENTE_UA2]
+           ,[NOME_VEND2]
+           ,[REGIAO_VEND])
+     VALUES
+           ('20230609',
+            '020201',
+           'GIBRALTAR - CURITIBA',
+           '000353814',
+           'N',
+           '0102',
+           '3M - FIBRAS E ESPONJAS',
+           'HB004094395',
+           'FIBRA SB USO GERAL 110X225',
+            50,
+           '5102',
+            'ME',
+           'CURITIBA',
+            '07652',
+            'FAZENDA RIO GRANDE, RS, PR',
+			'PR',
+           '040679',
+           '01',
+           'NTN ROLAMENTOS DO BRASIL LTDA',
+            '037',
+           'KEVIN.COLACO',
+           '000195',
+           'FABIANA COSTA FERNANDES',
+           '037',
+          'KEVIN.COLACO',
+           '096',
+           'FABIANA.FERNANDES',
+           'E-MAIL',
+           105,
+          0,
+           0,
+           0,
+           0,
+           0,
+           105,
+           0,
+           0,
+           1.74,
+           7.98,
+		   0,
+           95.28,
+           54.05,
+           41.23,
+           51.47,
+           39.26,
+           '68053090',
+           'F',
+           '9018105591',
+           '',
+          'CON',
+           '',
+          '',
+           '2',
+           '2',
+           '',
+          '',
+           0,
+           0,
+           '334335',
+          '14',
+           2.1,
+           'KIMBERLY CLARK BRASIL IND COM P HIG LTDA',
+           '',
+           'S',
+           '900000',
+           'GERENTE CURITIBA _Adilson',
+           '900000-GERENTE CURITIBA _Adilson',
+           22,
+           6,
+           202000,
+			690000,
+           '000014',
+           '900006 - GERENTE TELEVENDAS_Patricia',
+           '096   -FABIANA.FERNANDES',
+         '')
+GO
+
+
+
