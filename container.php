@@ -24,13 +24,13 @@ class Container
         return $this->instance[$classname];
     }
     
-    public function bind($key, $value)
+    public function bind($key)
     {
         if (!array_key_exists($key, $this->binding->bindings)){
             echo "Class dont exist";
             exit;
         }
-        $this->binding->bindings[$key] = $value;
+        $this->binding->bindings[$key];
     }
     
 }
